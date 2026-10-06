@@ -8,7 +8,7 @@ st.write("Paste your raw notes below, and the AI will generate a visual diagram.
 
 # 2. Securely load your Gemini API key from Streamlit's hidden secrets
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-1.5-flash') 
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # 3. Create the text input box for the user
 raw_text = st.text_area("Raw Data / Notes", height=200, placeholder="Paste raw notes, summaries, or tables here...")
